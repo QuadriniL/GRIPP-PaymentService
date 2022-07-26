@@ -1,2 +1,3 @@
-# GRIPP-PaymentService
-This micro service is for general payments for the Gripp Platform or others.
+# GRIPP
+## PaymentService
+The micro service for general payments of Gripp Platform or others.
