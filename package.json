@@ -12,9 +12,12 @@
     "start": "clear && ts-node src/index.ts"
   },
   "dependencies": {
+    "@prisma/client": "4.1.0",
+    "@types/node": "^18.6.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
+    "prisma": "^4.1.0",
     "ts-node": "^10.9.1"
   }
 }
