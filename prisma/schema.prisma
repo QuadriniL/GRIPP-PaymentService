@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,7 +8,7 @@ datasource db {
 }
 
 model Product {
-  id          String @id @default(cuid())
+  id          String   @id @default(cuid())
   description String
   price       Float
   createdAt   DateTime @default(now())
@@ -20,36 +17,36 @@ model Product {
 }
 
 model Costumer {
-  id          String @id @default(cuid())
-  name        String
-  document    String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @default(now())
-  deletedAt   DateTime
+  id        String   @id @default(cuid())
+  name      String
+  document  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  deletedAt DateTime
 }
 
 model Cart {
-  id          String @id @default(cuid())
-  costumerId  String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @default(now())
-  deletedAt   DateTime
+  id         String   @id @default(cuid())
+  costumerId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @default(now())
+  deletedAt  DateTime
 }
 
 model CartItem {
-  id          String @id @default(cuid())
-  cartId      String
-  productId   String
-  quantity    Int
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @default(now())
-  deletedAt   DateTime
+  id        String   @id @default(cuid())
+  cartId    String
+  productId String
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  deletedAt DateTime
 }
 
 model Receipt {
-  id          String @id @default(cuid())
-  cartId      String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @default(now())
-  deletedAt   DateTime
+  id        String   @id @default(cuid())
+  cartId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  deletedAt DateTime
 }
